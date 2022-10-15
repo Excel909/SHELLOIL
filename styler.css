@@ -1,0 +1,652 @@
+body{
+    margin:0;
+    padding: 0;
+    background:whitesmoke;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: candara;
+}
+
+.logo-pic{
+    height: 80px;
+    width: 100px;
+}
+
+.nav{
+    width: 100%;
+    height:105px;
+    background-color: transparent;
+    align-items: center;
+}
+
+.locker{
+    width: 76%;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.logo{
+    text-align: center;
+}
+
+.shell{
+    font-size: 20pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color:red;
+    font-family: arial;
+}
+
+.links{
+    display: flex;
+}
+
+.links a{
+    color:lightgrey;
+    font-size: 12pt;
+    text-decoration: none;
+    padding: 25px;
+    font-family: candara;
+    position: relative;
+    top:10px;
+}
+
+.links a:hover{
+    border-top: 3px solid lightgrey;
+    border-radius: 50%;
+}
+
+.links a:focus{
+    border-top: 3px solid orangered;
+    border-radius: 50%;
+}
+
+a.act{
+    border-top: 3px solid #333;
+    border-radius: 50%;
+}
+
+.hamburger{
+    font-size: 20pt;
+    font-weight: 1000;
+    cursor:pointer;
+    position: relative;
+    top:10px;
+}
+
+.show-off{
+    height: 55vh;
+    /* background-image: linear-gradient(to bottom, #eeee 50%, #333 50%); */
+    background-color: #333;
+    position: relative;
+    perspective: 150px;
+    border-bottom: 2px solid #333;
+}
+
+.show-pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.show-text{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    color: white;
+    font-family: arial;
+    animation-name: anime;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-duration: 2s;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+}
+
+.lo-1{
+    font-size: 30pt;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+
+.lo-2{
+    font-family: candara;
+}
+
+.curve{
+    left:300px;
+    border-left:5px solid white;
+    padding: 15px;
+    border-top: 5px solid white;
+    width: fit-content;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: animation1 2s ease-out 0s 1 normal;
+    animation-play-state: running;
+    animation-name: myAnime;
+}
+
+.show-butt{
+    width: 120px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    padding: 10px;
+    position: relative;
+    left: 10px;
+    border-radius: 5px;
+
+}
+
+@keyframes myAnime{
+    from{
+        transform: rotateY(0 deg);
+        margin-left:-350px;
+        opacity:0;
+    }
+
+    to{
+        transform: rotateY(360deg);
+        left: 300px;
+        opacity:1;
+    }
+}
+
+@keyframes anime{
+    from{
+        left:0px;
+        background-color: transparent;
+    }
+
+    to{
+        left:0px;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.5);
+    }
+}
+
+.preview{
+    width:70%;
+    height: fit-content;
+    padding: 10px;
+    position:relative;
+    top:20px;
+    margin: auto;
+    display: flex;
+    gap:40px;
+    perspective: 200px;
+}
+
+.pre-1,.pre-2,.pre-3{
+    width: 33%;
+    height: 300px;
+    /* border-top:10px solid lightgrey;
+    border-bottom: 10px solid lightgrey; */
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 5px 5px 1px #ccc;
+}
+
+.round{
+    width: 100px;
+    height: 100px;
+    border: 7px solid orangered;
+    margin: auto;
+    box-shadow: 5px 5px 5px #ccc;
+    border-radius: 100%;
+}
+
+.pre-head{
+    font-size: 13pt;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
+    top:10px;
+    margin: 10px;
+}
+
+footer{
+    height: 50vh;
+    background-color: #333;
+    margin-top: 100px;
+    display: flex;
+    gap:20px;
+
+}
+
+.foot-left,.foot-center,.foot-right{
+    height: 100%;
+    width:22%;
+    font-family: arial;
+    font-size: 13pt;
+    padding: 40px;
+
+}
+
+.foot-left a{
+    color:white;
+    text-decoration: none;
+    font-family: candara;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 1px;
+    border-bottom: 1px solid#444;
+    display: block;
+}
+
+.foot-left{
+    line-height: 1.5;
+    font-family: candara;
+    text-align: left;
+    color:#999;
+    font-size: 11pt;
+    margin-left: 15%;
+}
+
+a.reader{
+    font-weight: 500;
+    text-decoration: underline;
+    font-family: candara;
+    font-size: 12pt;
+}
+
+.cen-head{
+    color:white;
+    font-size: 12pt;
+}
+
+.foot-center ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.foot-center a{
+    color:#999;
+    font-family: candara;
+    text-decoration: none;
+    font-size: 11pt;
+    display: block;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+.foot-center a:hover{
+    text-decoration: underline;
+}
+
+.foot-right a{
+    color:#999;
+    text-decoration: none;
+}
+.foot-icon{
+    font-size: 25pt;
+    color:#999;
+}
+
+
+
+#about, #contact, #career{
+    position: relative;
+}
+#about:target, #contact:target, #career:target{
+    animation-name: myTurn;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: animation1 2s ease-out 0s 1 normal;
+    animation-play-state: running;
+    animation-name: myTurn;
+    border-top:10px solid orangered;
+    border-bottom: 10px solid orangered;
+}
+
+
+@keyframes myTurn{
+    from{
+        transform: rotateY(0 deg);
+        left:0px;
+    }
+
+    to{
+        transform: rotateY(360deg);
+        left: 0;
+        border-top:10px solid orangered;
+        border-bottom: 10px solid orangered;
+    }
+}
+
+.res-show{
+    display: none;
+}
+
+.iconic{
+    font-size: 40pt;
+    padding: 10px;
+}
+
+
+
+
+.res-nav{
+    display: none;
+}
+
+.res-links{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:900px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        display: none;
+    }
+
+    .show-off{
+        height: 55vh;
+        /* background-image: linear-gradient(to bottom, #eeee 50%, #333 50%); */
+        border-bottom: none;
+    }
+
+    .res-nav{
+        height: 15vh;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .res-links{
+        background-color: white;
+        width: 100%;
+        height: fit-content;
+        z-index: 1;
+        height: 60vh;
+        top:-100%;
+        position: absolute;
+    }
+
+    .res-links:target{
+        top:0px;
+        transition-duration: 1s;
+    }
+    .res-links a{
+        color:black;
+        text-decoration: none;
+        display: block;
+        padding: 35px;
+        font-size: 14pt;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        background-color: white;
+        z-index: 1;
+    }
+
+    .res-links ul{
+        margin:0;
+        padding:0;
+    }
+
+    .res-icon{
+        font-size: 30pt;
+    }
+
+    .win{
+        width: 100px;
+        height: 80px;
+    }
+
+    .winn a{
+        text-decoration: none;
+        color:#222;
+        font-size: 20pt;
+        padding: 10px;
+    }
+
+
+
+    footer{
+        height: fit-content;
+        background-color: #333;
+        margin-top: 100px;
+        display: block;
+        padding: 20px;
+    }
+    
+    .foot-left,.foot-center,.foot-right{
+        height: 40vh;
+        width:80%;
+        font-family: arial;
+        font-size: 13pt;
+        padding: 0px;
+        margin: auto;
+    }
+    
+    .foot-left a{
+        color:white;
+        text-decoration: none;
+        font-family: candara;
+        font-size: 12pt;
+        font-weight: bold;
+        padding: 1px;
+        border-bottom: none;
+        display: block;
+    }
+    
+    .foot-left{
+        line-height: 1.5;
+        font-family: candara;
+        text-align: left;
+        color:#999;
+        font-size: 11pt;
+        margin-left: 0;
+        width: 80%;
+        margin: auto;
+    }
+    
+    a.reader{
+        font-weight: 500;
+        text-decoration: underline;
+        font-family: candara;
+        font-size: 12pt;
+    }
+    
+    .cen-head{
+        color:white;
+        font-size: 12pt;
+    }
+    
+    .foot-center ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    .foot-center a{
+        color:#999;
+        font-family: candara;
+        text-decoration: none;
+        font-size: 11pt;
+        display: block;
+        padding: 8px;
+        text-transform: capitalize;
+    }
+    
+    .foot-center a:hover{
+        text-decoration: underline;
+    }
+    
+    .foot-right a{
+        color:#999;
+        text-decoration: none;
+    }
+    .foot-icon{
+        font-size: 25pt;
+        color:#999;
+    }
+    
+
+
+
+
+
+    
+    
+    .lo-1{
+        font-size: 20pt;
+        text-transform: uppercase;
+        font-weight: 1000;
+    }
+    
+    .lo-2{
+        font-family: candara;
+    }
+    
+    .curve{
+        position: none;
+        top:20%;
+        left:20%;
+    }
+
+    @keyframes myAnime{
+        from{
+            transform: rotateY(0 deg);
+            left:-100%;
+            opacity:0;
+        }
+    
+        to{
+            transform: rotateY(360deg);
+            left: 20%;
+            opacity:1;
+        }
+    }
+
+    .show-butt{
+        position: relative;
+        top:3px;
+        left: 3px;
+    }
+    
+    .preview{
+        width:100%;
+        height: fit-content;
+        padding: 10px;
+        position:relative;
+        top:20px;
+        display: block;
+    }
+
+
+    
+    .pre-1,.pre-2,.pre-3{
+        width: 390px;
+        height: 300px;
+        /* border-top:10px solid lightgrey;
+        border-bottom: 10px solid lightgrey; */
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0px 5px 5px 1px #ccc;
+        margin:auto;
+    }
+
+    .shift{
+        margin-top: 50px;
+    }
+    
+    .round{
+        width: 100px;
+        height: 100px;
+        border: 7px solid orangered;
+        margin: auto;
+        box-shadow: 5px 5px 5px #ccc;
+        border-radius: 100%;
+    }
+    
+    .pre-head{
+        font-size: 13pt;
+        font-weight: bolder;
+        text-transform: uppercase;
+        position: relative;
+        top:10px;
+        margin: 10px;
+    }
+}
+
+@media (max-width:480px){
+
+    .show-off{
+        height: 45vh;
+    }
+
+
+    .curve{
+        position: none;
+        top:20%;
+        left:10%;
+    }
+
+    @keyframes myAnime{
+        from{
+            transform: rotateY(0 deg);
+            left:-100%;
+            opacity:0;
+        }
+    
+        to{
+            transform: rotateY(360deg);
+            left: 10%;
+            opacity:1;
+        }
+    }
+
+    .pre-1,.pre-2,.pre-3{
+        width: 90%;
+        height: 300px;
+        /* border-top:10px solid lightgrey;
+        border-bottom: 10px solid lightgrey; */
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0px 5px 5px 1px #ccc;
+        margin:auto;
+    }
+
+    .shift{
+        margin-top: 50px;
+    }
+
+    .win{
+        width: 90px;
+        height: 80px;
+    }
+
+}
+
