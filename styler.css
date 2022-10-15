@@ -347,7 +347,7 @@ a.reader{
     display: none;
 }
 
-.res-links{
+.device{
     display: none;
 }
 
@@ -361,6 +361,9 @@ a.reader{
 
 @media (max-width:900px){
 
+    .device{
+        display: block;
+    }
     body{
         overflow-x: hidden;
     }
