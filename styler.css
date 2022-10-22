@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding: 0;
-    background:whitesmoke;
+    background:#e5e5e5;
 }
 
 *{
@@ -115,7 +115,7 @@ a.act{
     animation-play-state: running;
     animation-duration: 2s;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .lo-1{
@@ -129,7 +129,7 @@ a.act{
 }
 
 .curve{
-    left:300px;
+    left:500px;
     border-left:5px solid white;
     padding: 15px;
     border-top: 5px solid white;
@@ -139,6 +139,7 @@ a.act{
     animation: animation1 2s ease-out 0s 1 normal;
     animation-play-state: running;
     animation-name: myAnime;
+    top:20px;
 }
 
 .show-butt{
@@ -162,7 +163,7 @@ a.act{
 
     to{
         transform: rotateY(360deg);
-        left: 300px;
+        left: 500px;
         opacity:1;
     }
 }
@@ -176,7 +177,7 @@ a.act{
     to{
         left:0px;
         background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.7);
     }
 }
 
@@ -194,13 +195,15 @@ a.act{
 
 .pre-1,.pre-2,.pre-3{
     width: 33%;
-    height: 300px;
+    height: fit-content;
     /* border-top:10px solid lightgrey;
     border-bottom: 10px solid lightgrey; */
     border-radius: 5px;
     text-align: center;
     padding: 10px;
     box-shadow: 0px 5px 5px 1px #ccc;
+    /* border-top-right-radius: 40%; */
+    border:1px solid #ccc;
 }
 
 .round{
@@ -351,6 +354,106 @@ a.reader{
     display: none;
 }
 
+.real-views{
+    height: fit-content;
+    width: 85%;
+    margin: auto;
+    display: block;
+}
+
+.real-ab,.real-cont,.real-car{
+    display: flex;
+    height: 60vh;
+    margin-top:100px;
+    width: 100%;
+    gap:2%;
+}
+
+
+.real-ab{
+    margin-top: 100px;
+}
+
+.rel,.ril,.c-rel,.c-ril,.r-rel,.r-ril{
+    width: 49%;
+    height: 100%;
+}
+
+.ril,.c-ril,.r-ril{
+    box-shadow: 0px 5px 10px 2px #ccc;
+    padding: 40px;
+    text-align: center;
+}
+
+.rim-head{
+    font-size: 20pt;
+    font-family: candara;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.rib{
+
+}
+
+
+.hanger{
+    display: block;
+    position: fixed;
+    height: 25vh;
+    /* box-shadow: 5px 5px 5px #ccc; */
+    z-index: 1;
+    top: 0px;
+    background-color: whitesmoke;
+    width: 60px;
+    top:270px;
+    padding: 10px;
+}
+
+.face{
+    font-size: 30pt;
+}
+
+.blue{
+    color: rgb(27, 69, 255);
+}
+
+.red{
+    color: red;
+}
+
+
+.rim-pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -361,6 +464,9 @@ a.reader{
 
 @media (max-width:900px){
 
+    .hanger{
+        display: none;
+    }
     .device{
         display: block;
     }
@@ -387,28 +493,39 @@ a.reader{
 
     .res-links{
         background-color: white;
-        width: 100%;
+        width: 60%;
         height: fit-content;
         z-index: 1;
-        height: 60vh;
-        top:-100%;
-        position: absolute;
+        height: 100%;
+        left:-100%;
+        position: fixed;
     }
 
     .res-links:target{
-        top:0px;
-        transition-duration: 1s;
+        left:0px;
+        transition-duration: 0.7s;
+    }
+    
+    .res-shell{
+        height: fit-content;
+        padding: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .r-s{
+        width: 70px;
+        height: 60px;
+        margin: auto;
     }
     .res-links a{
-        color:black;
         text-decoration: none;
+        color:#222;
+        font-size: 16pt;
         display: block;
-        padding: 35px;
-        font-size: 14pt;
+        padding: 30px;
+        text-align: left;
         border-bottom: 1px solid #ccc;
-        text-align: center;
-        background-color: white;
-        z-index: 1;
     }
 
     .res-links ul{
@@ -421,8 +538,8 @@ a.reader{
     }
 
     .win{
-        width: 100px;
-        height: 80px;
+        width: 80px;
+        height: 70px;
     }
 
     .winn a{
@@ -534,7 +651,7 @@ a.reader{
     .curve{
         position: none;
         top:20%;
-        left:20%;
+        left:25%;
     }
 
     @keyframes myAnime{
@@ -546,7 +663,7 @@ a.reader{
     
         to{
             transform: rotateY(360deg);
-            left: 20%;
+            left: 25%;
             opacity:1;
         }
     }
@@ -563,30 +680,36 @@ a.reader{
         padding: 10px;
         position:relative;
         top:20px;
-        display: block;
     }
 
 
     
     .pre-1,.pre-2,.pre-3{
-        width: 390px;
-        height: 300px;
+        width: 170px;
+        height: 170px;
         /* border-top:10px solid lightgrey;
         border-bottom: 10px solid lightgrey; */
         border-radius: 5px;
         text-align: center;
         padding: 10px;
         box-shadow: 0px 5px 5px 1px #ccc;
-        margin:auto;
+        margin:auto;    
+        overflow-y: scroll;
     }
 
     .shift{
         margin-top: 50px;
     }
+
+    .iconic{
+        font-size: 25pt;
+        padding: 10px;
+    }
+    
     
     .round{
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         border: 7px solid orangered;
         margin: auto;
         box-shadow: 5px 5px 5px #ccc;
@@ -596,24 +719,68 @@ a.reader{
     .pre-head{
         font-size: 13pt;
         font-weight: bolder;
-        text-transform: uppercase;
+        text-transform: capitalize;
         position: relative;
         top:10px;
         margin: 10px;
     }
+
+    .real-views{
+        height: fit-content;
+        width: 100%;
+        display:block;
+        margin: auto;
+    }
+    
+    .real-ab,.real-cont,.real-car{
+        display: block;
+        height: fit-content;
+        margin-top:50px;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+    }
+    
+    
+    .real-ab{
+        margin-top: 100px;
+    }
+    
+    .rel,.ril,.c-rel,.c-ril,.r-rel,.r-ril{
+        width: 100%;
+        height: 50vh;
+        margin-top: 30px;
+    }
+    
+    .face{
+        font-size: 30pt;
+    }
+    
+    .blue{
+        color: rgb(27, 69, 255);
+    }
+    
+    .red{
+        color: red;
+    }
+    
 }
 
-@media (max-width:480px){
-
-    .show-off{
-        height: 45vh;
-    }
 
 
+
+
+
+
+
+
+
+
+/* @media (max-width:900px){
     .curve{
         position: none;
         top:20%;
-        left:10%;
+        left:25%;
     }
 
     @keyframes myAnime{
@@ -625,14 +792,147 @@ a.reader{
     
         to{
             transform: rotateY(360deg);
-            left: 10%;
+            left: 25%;
             opacity:1;
         }
     }
 
+    .lo-1{
+        font-size: 30pt;
+        text-transform: uppercase;
+        font-weight: 1000;
+    }
+    
+    .lo-2{
+        font-family: candara;
+        font-size: 14pt;
+    }
+
+}
+ */
+
+
+
+
+ /* .real-views{
+    height: fit-content;
+    width: 100%;
+    display:block;
+    margin: auto;
+}
+
+.real-ab,.real-cont,.real-car{
+    display: block;
+    height: fit-content;
+    margin-top:50px;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+}
+
+
+.real-ab{
+    margin-top: 100px;
+}
+
+.rel,.ril,.c-rel,.c-ril,.r-rel,.r-ril{
+    width: 100%;
+    height: 50vh;
+    margin-top: 30px;
+}
+
+.face{
+    font-size: 30pt;
+}
+
+.blue{
+    color: rgb(27, 69, 255);
+}
+
+.red{
+    color: red;
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:480px){
+
+    .show-off{
+        height: 45vh;
+    }
+
+
+    .curve{
+        position: none;
+        top:20%;
+        left:15%;
+    }
+
+    @keyframes myAnime{
+        from{
+            transform: rotateY(0 deg);
+            left:-100%;
+            opacity:0;
+        }
+    
+        to{
+            transform: rotateY(360deg);
+            left: 15%;
+            opacity:1;
+        }
+    }
+
+
+    .preview{
+        display: flex;
+    }
+
     .pre-1,.pre-2,.pre-3{
-        width: 90%;
-        height: 300px;
+        width:90%;
+        height: fit-content;
         /* border-top:10px solid lightgrey;
         border-bottom: 10px solid lightgrey; */
         border-radius: 5px;
@@ -640,6 +940,7 @@ a.reader{
         padding: 10px;
         box-shadow: 0px 5px 5px 1px #ccc;
         margin:auto;
+    
     }
 
     .shift{
@@ -647,9 +948,58 @@ a.reader{
     }
 
     .win{
-        width: 90px;
-        height: 80px;
+        width: 80px;
+        height: 70px;
     }
+
+
+    .res-links{
+        background-color: white;
+        width: 60%;
+        height: fit-content;
+        z-index: 1;
+        height: 100%;
+        left:-100%;
+        position: fixed;
+    }
+
+    .res-links:target{
+        left:0px;
+        transition-duration: 0.7s;
+    }
+    
+    .res-shell{
+        height: fit-content;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .slim{
+        width: 80%;
+        height: fit-content;
+        margin: auto;
+    }
+
+    .r-s{
+        width: 70px;
+        height: 60px;
+        position: relative;
+        left: 30px;
+    }
+    .res-links a{
+        text-decoration: none;
+        color:#222;
+        font-size: 14pt;
+        display: block;
+        padding: 30px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .res-links ul{
+        list-style-type: none;
+    }
+
 
 }
 
