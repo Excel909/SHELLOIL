@@ -381,16 +381,28 @@ a.reader{
 
 .ril,.c-ril,.r-ril{
     box-shadow: 0px 5px 10px 2px #ccc;
-    padding: 40px;
+    padding: 60px;
     text-align: center;
+    line-height: 1.5;
+    font-family: candara;
+    font-size: 13pt;
+    font-weight: 400;
+}
+
+.ril a,.c-ril a,.r-ril a{
+    color: #333;
 }
 
 .rim-head{
     font-size: 20pt;
-    font-family: candara;
-    font-weight: bold;
-    text-transform: capitalize;
+    font-family: arial black;
+    font-weight: bolder;
+    text-transform: uppercase;
     text-decoration: underline;
+    padding: 10px;
+    text-decoration-color:red;
+    font-weight: bolder;
+    color: #333;
 }
 
 .rib{
@@ -408,19 +420,23 @@ a.reader{
     background-color: whitesmoke;
     width: 60px;
     top:270px;
-    padding: 10px;
+    padding: 0px;
+    text-align: center;
 }
 
 .face{
-    font-size: 30pt;
+    font-size: 20pt;
+    padding: 10px;
+    display: block;
+    border-top:1px solid #ccc;
 }
 
 .blue{
-    color: rgb(27, 69, 255);
+    color: #333;
 }
 
 .red{
-    color: red;
+    color: #333;
 }
 
 
@@ -631,13 +647,6 @@ a.reader{
         color:#999;
     }
     
-
-
-
-
-
-    
-    
     .lo-1{
         font-size: 20pt;
         text-transform: uppercase;
@@ -680,6 +689,7 @@ a.reader{
         padding: 10px;
         position:relative;
         top:20px;
+        display: none;
     }
 
 
@@ -735,7 +745,7 @@ a.reader{
     .real-ab,.real-cont,.real-car{
         display: block;
         height: fit-content;
-        margin-top:50px;
+        margin-top:70px;
         width: 100%;
         box-shadow: none;
         border: none;
@@ -750,124 +760,11 @@ a.reader{
         width: 100%;
         height: 50vh;
         margin-top: 30px;
+        box-shadow: none;
     }
     
-    .face{
-        font-size: 30pt;
-    }
-    
-    .blue{
-        color: rgb(27, 69, 255);
-    }
-    
-    .red{
-        color: red;
-    }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width:900px){
-    .curve{
-        position: none;
-        top:20%;
-        left:25%;
-    }
-
-    @keyframes myAnime{
-        from{
-            transform: rotateY(0 deg);
-            left:-100%;
-            opacity:0;
-        }
-    
-        to{
-            transform: rotateY(360deg);
-            left: 25%;
-            opacity:1;
-        }
-    }
-
-    .lo-1{
-        font-size: 30pt;
-        text-transform: uppercase;
-        font-weight: 1000;
-    }
-    
-    .lo-2{
-        font-family: candara;
-        font-size: 14pt;
-    }
-
-}
- */
-
-
-
-
- /* .real-views{
-    height: fit-content;
-    width: 100%;
-    display:block;
-    margin: auto;
-}
-
-.real-ab,.real-cont,.real-car{
-    display: block;
-    height: fit-content;
-    margin-top:50px;
-    width: 100%;
-    box-shadow: none;
-    border: none;
-}
-
-
-.real-ab{
-    margin-top: 100px;
-}
-
-.rel,.ril,.c-rel,.c-ril,.r-rel,.r-ril{
-    width: 100%;
-    height: 50vh;
-    margin-top: 30px;
-}
-
-.face{
-    font-size: 30pt;
-}
-
-.blue{
-    color: rgb(27, 69, 255);
-}
-
-.red{
-    color: red;
-}
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -927,7 +824,7 @@ a.reader{
 
 
     .preview{
-        display: flex;
+        display: none;
     }
 
     .pre-1,.pre-2,.pre-3{
