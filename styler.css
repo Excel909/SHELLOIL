@@ -405,10 +405,6 @@ a.reader{
     color: #333;
 }
 
-.rib{
-
-}
-
 
 .hanger{
     display: block;
@@ -538,39 +534,48 @@ a.reader{
 
     .res-links{
         background-color: white;
-        width: 60%;
+        width: 100%;
         height: fit-content;
         z-index: 1;
         height: 100%;
-        left:-100%;
+        top:-100%;
         position: fixed;
     }
 
     .res-links:target{
-        left:0px;
+        top:0px;
         transition-duration: 0.7s;
     }
     
-    .res-shell{
-        height: fit-content;
-        padding: 30px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .r-s{
-        width: 70px;
-        height: 60px;
-        margin: auto;
-    }
     .res-links a{
         text-decoration: none;
         color:#222;
         font-size: 16pt;
-        display: block;
+        display: flex;
         padding: 30px;
         text-align: left;
         border-bottom: 1px solid #ccc;
+        align-items: center;
+        gap:20px;
+    }
+
+    .rop{
+        background-color: red;
+        padding: 10px;
+    }
+
+    .rope,.rop{
+        width: 70px;
+        height: 50px;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+        align-items: center;
+        font-size: 20pt;
+    }
+
+    .rope{
+        background-color: #222;
     }
 
     .res-links ul{
@@ -882,27 +887,12 @@ a.reader{
         height: 70px;
     }
 
-
-    .res-links{
-        background-color: white;
-        width: 60%;
-        height: fit-content;
-        z-index: 1;
-        height: 100%;
-        left:-100%;
-        position: fixed;
-    }
-
-    .res-links:target{
-        left:0px;
-        transition-duration: 0.7s;
-    }
     
-    .res-shell{
+    /* .res-shell{
         height: fit-content;
         padding: 30px;
         text-align: left;
-    }
+    } */
 
     .slim{
         width: 80%;
@@ -910,25 +900,11 @@ a.reader{
         margin: auto;
     }
 
-    .r-s{
+    /* .r-s{
         width: 70px;
         height: 60px;
         position: relative;
         left: 30px;
-    }
-    .res-links a{
-        text-decoration: none;
-        color:#222;
-        font-size: 14pt;
-        display: block;
-        padding: 30px;
-        font-weight: bold;
-        text-align: left;
-    }
-
-    .res-links ul{
-        list-style-type: none;
-    }
-
+    } */
 
 }
