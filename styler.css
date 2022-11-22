@@ -576,6 +576,7 @@ a.reader{
 
     .rope{
         background-color: #222;
+        padding:10px;
     }
 
     .res-links ul{
